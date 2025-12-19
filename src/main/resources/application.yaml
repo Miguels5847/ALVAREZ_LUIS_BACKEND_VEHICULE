@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: vehiculo-service
+  datasource:
+    url: jdbc:h2:mem:vehiculodb
+    driverClassName: org.h2.Driver
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:sa}
+    platform: h2
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8081
